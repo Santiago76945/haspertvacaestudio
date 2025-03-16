@@ -29,7 +29,7 @@ const Team = () => {
             <img src={imagenSantiago} alt="Dr. Oscar Santiago Haspert Piaggio" />
             <h3>Dr. Oscar Santiago Haspert Piaggio</h3>
             <p>
-              Abogado especializado en la creación y desarrollo de contenidos pedagógicos digitales en las áreas de Derecho Internacional Público, Derecho Laboral y Derecho Procesal Penal. Sus producciones destacan entre las más reconocidas y difundidas en el ámbito online, gracias a su calidad académica y claridad expositiva. Cuenta, además, con experiencia docente en la Universidad Blas Pascal (UBP), donde integró el equipo académico de la cátedra de Lógica Jurídica, aportando conocimientos sólidos, rigor conceptual y un enfoque didáctico orientado a facilitar una comprensión profunda del Derecho.
+              Abogado especializado en la creación y desarrollo de contenidos pedagógicos digitales en las áreas de Derecho Internacional Público, Derecho Laboral y Derecho Procesal Penal. Sus producciones destacan entre las más reconocidas en el ámbito online, gracias a su calidad académica y claridad expositiva. Cuenta, además, con experiencia docente en la Universidad Blas Pascal, donde integró el equipo académico de la cátedra de Lógica Jurídica con un enfoque orientado a facilitar una comprensión profunda del Derecho de manera sencilla y accesible.
             </p>
           </div>
         </div>

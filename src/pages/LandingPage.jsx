@@ -12,25 +12,33 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <Header />
+
+      {/* Sección principal con <h1> y alt detallado */}
       <section className="hero">
         <div className="hero-content">
-          <img src={logo} alt="Logo Haspert Vaca Estudio Jurídico" className="logo" />
+          <img
+            src={logo}
+            alt="Logo Haspert Vaca Estudio Jurídico en Córdoba Capital"
+            className="logo"
+          />
+          <h1>Haspert Vaca Estudio Jurídico</h1>
           <p>
-            Estudio Jurídico en Córdoba Capital especializado en Derecho de Familia, Laboral, Civil, Societario e Internacional Privado. Asesoría integral y personalizada.
+            Especializados en Derecho de Familia, Laboral, Civil, Societario e Internacional Privado. Asesoría integral y personalizada en Córdoba Capital.
           </p>
           <div className="hero-buttons">
-            <Link to="/services" className="button">Nuestros Servicios</Link>
-            <Link to="/contact" className="button">Contacto</Link>
+            <Link to="/services" className="button">Ver Servicios</Link>
+            <Link to="/contact" className="button">Contactar</Link>
           </div>
         </div>
       </section>
 
+      {/* Sección de bienvenida con <h2> y texto conciso */}
       <section className="welcome-section">
-        <h2>Bienvenido a Haspert Vaca Estudio Jurídico</h2>
+        <h2>Bienvenido a <strong>Haspert Vaca Estudio Jurídico</strong></h2>
         <p>
-          Un equipo de abogados con sede en Córdoba Capital, dedicado a ofrecer soluciones jurídicas eficaces y personalizadas.
-          Contamos con profesionales altamente capacitados en Derecho Civil, Laboral, Comercial, de Familia, Internacional y Tributario.
-          Nuestra misión es brindar asesoramiento integral con un enfoque cercano, transparente y orientado siempre a defender tus derechos y alcanzar los mejores resultados para cada caso.
+          Un equipo de <strong>abogados</strong> con sede en <strong>Córdoba Capital</strong>, dedicado a ofrecer <strong>soluciones jurídicas</strong> eficaces y personalizadas.
+          Contamos con profesionales altamente capacitados en <strong>Derecho Civil, Laboral, Comercial, de Familia, Internacional y Tributario</strong>.
+          Nuestra misión es brindar <strong>asesoramiento integral</strong> con un enfoque <strong>cercano, transparente</strong> y orientado a <strong>defender tus derechos</strong> y alcanzar los <strong>mejores resultados</strong> para cada caso.
         </p>
       </section>
 
