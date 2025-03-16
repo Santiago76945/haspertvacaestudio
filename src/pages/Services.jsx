@@ -6,12 +6,12 @@ import Footer from '../components/Footer';
 import FloatingContact from '../components/FloatingContact';
 import '../styles/services.css';
 
-
 const Services = () => {
   return (
     <div>
       <Header />
       <FloatingContact />
+
       {/* Mensaje de Bienvenida con mención a palabras clave */}
       <section className="welcome-section">
         <h1>En Hasper y Vaca Estudio Jurídico, estamos para ayudarte</h1>
@@ -36,6 +36,7 @@ const Services = () => {
         </ul>
       </nav>
 
+      {/* Texto general de presentación de los servicios */}
       <section className="services">
         <h2>Servicios Legales Especializados en Córdoba</h2>
         <p>
@@ -46,330 +47,296 @@ const Services = () => {
         </p>
       </section>
 
-      {/* DERECHO CIVIL */}
-      <section id="civil" className="services">
-        <h2>Derecho Civil</h2>
-        {/* Mensaje SEO-friendly para Derecho Civil */}
-        <p>
-          ¿Buscando un <strong>abogado civil en Córdoba</strong> que defienda tus intereses en temas de 
-          contratos, responsabilidad civil o sucesiones? En Hasper y Vaca Estudio Jurídico contamos 
-          con un equipo de profesionales especializados en cada aspecto del Derecho Civil para 
-          brindarte soluciones efectivas y personalizadas.
-        </p>
+      {/* CONTENEDOR PRINCIPAL QUE MUESTRA TODAS LAS RAMAS COMO "TARJETAS" */}
+      <section className="services">
         <div className="services-grid">
-          <div className="service-item">
-            <h3>1. Contratos y Obligaciones</h3>
-            <p>
-              Redacción y revisión de contratos civiles.<br />
-              Resolución de conflictos contractuales.<br />
-              Asesoramiento en incumplimiento de obligaciones.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>2. Responsabilidad Civil</h3>
-            <p>
-              Reclamaciones por daños y perjuicios.<br />
-              Reclamos por accidentes de tránsito.<br />
-              Defensa ante demandas de responsabilidad.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>3. Derechos Reales e Inmobiliarios</h3>
-            <p>
-              Asistencia en compraventas de inmuebles.<br />
-              Constitución y extinción de usufructos, hipotecas, servidumbres.<br />
-              Conflictos de propiedad y desalojos.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>4. Sucesiones y Testamentos</h3>
-            <p>
-              Apertura y tramitación integral de sucesiones.<br />
-              Elaboración y asesoramiento en testamentos.<br />
-              Partición de bienes y conflictos hereditarios.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>5. Mediaciones y Métodos Alternativos</h3>
-            <p>
-              Resolución extrajudicial de controversias.<br />
-              Mediaciones civiles y familiares.<br />
-              Conciliaciones y arbitrajes para evitar litigios prolongados.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* DERECHO DE FAMILIA */}
-      <section id="familia" className="services">
-        <h2>Derecho de Familia</h2>
-        {/* Mensaje SEO-friendly para Derecho de Familia */}
-        <p>
-          Si necesitas un <strong>abogado de familia en Córdoba</strong> que te oriente sobre 
-          divorcios, adopciones o alimentos, estás en el lugar indicado. En Hasper y Vaca Estudio 
-          Jurídico manejamos <strong>divorcios internacionales en Córdoba</strong> y en otras jurisdicciones, 
-          así como todo tipo de procesos familiares con la sensibilidad y profesionalismo 
-          que mereces.
-        </p>
-        <div className="services-grid">
-          <div className="service-item">
-            <h3>1. Divorcios y Separaciones</h3>
+          {/* 1. DERECHO CIVIL */}
+          <div className="service-item" id="civil">
+            <h2>Derecho Civil</h2>
+            <div className="service-image-wrapper">
+              <img
+                src="/images/derecho-civil.webp"
+                alt="Derecho Civil"
+                className="service-image"
+              />
+            </div>
             <p>
-              Divorcios de mutuo acuerdo o contenciosos.<br />
-              Separación de bienes y acuerdos de manutención.<br />
-              Tramitación de convenios reguladores.<br />
-              <strong>Divorcio internacional en Córdoba y otras jurisdicciones</strong>.
+              ¿Buscando un <strong>abogado civil en Córdoba</strong> que defienda tus intereses en temas de
+              contratos, responsabilidad civil o sucesiones? En Hasper y Vaca Estudio Jurídico contamos
+              con un equipo de profesionales especializados en cada aspecto del Derecho Civil para
+              brindarte soluciones efectivas y personalizadas.
             </p>
+            {/* Sub-servicios: ahora 6 ejemplos */}
+            <div className="sub-services-grid">
+              <div className="sub-service-item">
+                <h4>Contratos y Obligaciones</h4>
+                <p>Redacción, revisión y defensa en conflictos contractuales.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Responsabilidad Civil</h4>
+                <p>Reclamaciones por daños y perjuicios, defensa y asesoramiento legal.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Sucesiones</h4>
+                <p>Testamentos, declaratoria de herederos y distribución de bienes.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Derecho del Consumidor</h4>
+                <p>Protección de derechos y reclamos por incumplimientos comerciales.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Propiedad y Reivindicaciones</h4>
+                <p>Acciones para defensa y recuperación de la propiedad.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Locaciones Urbanas y Desalojos</h4>
+                <p>Asesoramiento en contratos de alquiler, cobro de rentas y desalojos.</p>
+              </div>
+            </div>
           </div>
-          <div className="service-item">
-            <h3>2. Alimentos y Responsabilidad Parental</h3>
-            <p>
-              Asesoramiento en reclamos de alimentos para hijos o excónyuges.<br />
-              Ejecución y modificación de cuotas alimentarias.<br />
-              Pautas de cuidado personal y régimen de comunicación.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>3. Adopciones</h3>
-            <p>
-              Orientación legal en procesos de adopción nacional e internacional.<br />
-              Representación en organismos públicos y tribunales.<br />
-              Seguimiento y cumplimiento de requisitos legales.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>4. Protección de Personas Vulnerables</h3>
-            <p>
-              Curatelas y tutelas para adultos mayores o personas con discapacidad.<br />
-              Procedimientos judiciales de restricción de capacidad.<br />
-              Defensa de derechos de personas con necesidades especiales.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>5. Mediación y Acuerdos Familiares</h3>
-            <p>
-              Soluciones amistosas para conflictos familiares.<br />
-              Redacción de acuerdos prenupciales y capitulaciones matrimoniales.<br />
-              Orientación para reducir la tensión y el costo emocional de un litigio.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* DERECHO COMERCIAL */}
-      <section id="comercial" className="services">
-        <h2>Derecho Comercial</h2>
-        {/* Mensaje SEO-friendly para Derecho Comercial */}
-        <p>
-          ¿Estás buscando un <strong>abogado en derecho comercial en Córdoba</strong> para asesorarte 
-          en contratos mercantiles, títulos de crédito o litigios comerciales? Nuestro equipo ofrece 
-          soluciones ágiles y eficientes para garantizar la seguridad jurídica de tus operaciones 
-          y defender tus intereses empresariales.
-        </p>
-        <div className="services-grid">
-          <div className="service-item">
-            <h3>1. Contratos Mercantiles</h3>
+          {/* 2. DERECHO DE FAMILIA */}
+          <div className="service-item" id="familia">
+            <h2>Derecho de Familia</h2>
+            <div className="service-image-wrapper">
+              <img
+                src="/images/derecho-familia.webp"
+                alt="Derecho de Familia"
+                className="service-image"
+              />
+            </div>
             <p>
-              Asesoramiento en compraventa, distribución y franquicias.<br />
-              Elaboración y revisión de contratos de prestación de servicios.<br />
-              Resolución de controversias por incumplimiento contractual.
+              Si necesitas un <strong>abogado de familia en Córdoba</strong> que te oriente sobre
+              divorcios, adopciones o alimentos, estás en el lugar indicado. En Hasper y Vaca Estudio
+              Jurídico manejamos <strong>divorcios internacionales en Córdoba</strong> y en otras jurisdicciones,
+              así como todo tipo de procesos familiares con la sensibilidad y profesionalismo
+              que mereces.
             </p>
+            <div className="sub-services-grid">
+              <div className="sub-service-item">
+                <h4>Divorcios y Separaciones</h4>
+                <p>Procedimientos de mutuo acuerdo o contenciosos, incluyendo su reconocimiento internacional.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Adopciones</h4>
+                <p>Asesoría legal en trámites de adopción nacional e internacional.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Alimentos</h4>
+                <p>Reclamos, convenios y ejecución de obligaciones alimentarias.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Tenencia y Régimen de Visitas</h4>
+                <p>Acuerdos o litigios relacionados con la custodia y visitas de menores.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Filiaciones</h4>
+                <p>Reconocimiento de paternidad y maternidad, impugnaciones y pruebas genéticas.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Violencia Familiar y Órdenes de Protección</h4>
+                <p>Asistencia legal para víctimas y defensas en casos de violencia doméstica.</p>
+              </div>
+            </div>
           </div>
-          <div className="service-item">
-            <h3>2. Títulos de Crédito</h3>
-            <p>
-              Cobro de cheques, pagarés y letras de cambio.<br />
-              Juicios ejecutivos y ejecuciones prendarias.<br />
-              Negociación de reestructuraciones de deuda.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>3. Competencia Desleal y Defensa del Consumidor</h3>
-            <p>
-              Representación en casos de publicidad engañosa.<br />
-              Reclamos por productos defectuosos o mal servicio.<br />
-              Protección de marcas, patentes y propiedad intelectual.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>4. Insolvencia y Concursos</h3>
-            <p>
-              Asistencia en procesos de quiebra y concurso preventivo.<br />
-              Definición de estrategias de recuperación de crédito.<br />
-              Representación de acreedores y deudores ante tribunales.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>5. Litigios Comerciales</h3>
-            <p>
-              Resolución de conflictos en el ámbito societario y mercantil.<br />
-              Asesoría en arbitrajes nacionales e internacionales.<br />
-              Ejecución de laudos arbitrales y sentencias comerciales.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* DERECHO INTERNACIONAL PRIVADO */}
-      <section id="internacional" className="services">
-        <h2>Derecho Internacional Privado</h2>
-        {/* Mensaje SEO-friendly para Derecho Internacional Privado */}
-        <p>
-          En casos con elementos extranjeros, contar con un <strong>abogado especializado en 
-          Derecho Internacional Privado en Córdoba</strong> es fundamental. Nuestro estudio te 
-          asesora en conflictos de jurisdicción, reconocimiento de sentencias extranjeras y 
-          demás trámites con proyección internacional, respaldando tus derechos donde quiera 
-          que estés.
-        </p>
-        <div className="services-grid">
-          <div className="service-item">
-            <h3>1. Reconocimiento y Ejecución de Resoluciones Extranjeras</h3>
+          {/* 3. DERECHO COMERCIAL */}
+          <div className="service-item" id="comercial">
+            <h2>Derecho Comercial</h2>
+            <div className="service-image-wrapper">
+              <img
+                src="/images/derecho-comercial.jpeg"
+                alt="Derecho Comercial"
+                className="service-image"
+              />
+            </div>
             <p>
-              Exequátur de sentencias extranjeras en Argentina.<br />
-              Reconocimiento de laudos arbitrales internacionales.<br />
-              Reconocimiento de sentencias de divorcio y adopciones extranjeras.
+              ¿Estás buscando un <strong>abogado en derecho comercial en Córdoba</strong> para asesorarte
+              en contratos mercantiles, títulos de crédito o litigios comerciales? Nuestro equipo ofrece
+              soluciones ágiles y eficientes para garantizar la seguridad jurídica de tus operaciones
+              y defender tus intereses empresariales.
             </p>
+            <div className="sub-services-grid">
+              <div className="sub-service-item">
+                <h4>Contratos Mercantiles</h4>
+                <p>Redacción y revisión de contratos de compraventa, distribución y más.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Títulos de Crédito</h4>
+                <p>Cheque, pagaré, letra de cambio y su ejecución judicial.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Litigios Comerciales</h4>
+                <p>Defensa legal en juicios mercantiles y arbitrajes.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Arbitraje y Mediación</h4>
+                <p>Mecanismos alternativos de resolución de disputas en materia mercantil.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Concursos y Quiebras</h4>
+                <p>Asistencia en procedimientos concursales y liquidaciones comerciales.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Comercio Electrónico y Tecnología</h4>
+                <p>Asesoría en contratos online, protección de datos y normativa digital.</p>
+              </div>
+            </div>
           </div>
-          <div className="service-item">
-            <h3>2. Conflictos de Ley y Jurisdicción</h3>
-            <p>
-              Determinación de legislación aplicable en contratos internacionales.<br />
-              Asesoría en litispendencia internacional y foros de competencia.<br />
-              Estrategias de defensa en tribunales extranjeros.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>3. Derecho de Familia Internacional</h3>
-            <p>
-              Inscripción de matrimonios celebrados en el extranjero.<br />
-              Reclamo de alimentos a nivel internacional.<br />
-              Restitución internacional de menores (sustracción parental).
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>4. Derecho Sucesorio Internacional</h3>
-            <p>
-              Sucesiones con último domicilio en el extranjero.<br />
-              Reconocimiento y ejecución de testamentos foráneos.<br />
-              Partición de bienes en distintos países.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>5. Documentación y Apostillas</h3>
-            <p>
-              Legalización y apostilla de documentos (Convenio de La Haya).<br />
-              Traducciones oficiales para uso en el extranjero.<br />
-              Diligenciamiento de exhortos y notificaciones en otros países.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* DERECHO DE SOCIEDADES */}
-      <section id="sociedades" className="services">
-        <h2>Derecho de Sociedades</h2>
-        {/* Mensaje SEO-friendly para Derecho de Sociedades */}
-        <p>
-          ¿Quieres constituir una empresa y necesitas un <strong>abogado en sociedades en Córdoba</strong>? 
-          En Hasper y Vaca Estudio Jurídico te ayudamos desde la creación de tu sociedad hasta 
-          su eventual reestructuración, fusión o liquidación. Te asesoramos en cada etapa para 
-          que tu negocio cumpla con todas las normas legales vigentes.
-        </p>
-        <div className="services-grid">
-          <div className="service-item">
-            <h3>1. Constitución de Sociedades</h3>
+          {/* 4. DERECHO INTERNACIONAL PRIVADO */}
+          <div className="service-item" id="internacional">
+            <h2>Derecho Internacional Privado</h2>
+            <div className="service-image-wrapper">
+              <img
+                src="/images/derecho-internacional.jpeg"
+                alt="Derecho Internacional Privado"
+                className="service-image"
+              />
+            </div>
             <p>
-              Asesoramiento en la elección del tipo societario adecuado.<br />
-              <strong>Abogados para iniciar una sociedad en Córdoba</strong>, desde Pymes hasta grandes empresas.<br />
-              Redacción de estatutos y contratos sociales.<br />
-              Tramitación de inscripciones ante los registros correspondientes.
+              En casos con elementos extranjeros, contar con un <strong>abogado especializado en
+                Derecho Internacional Privado en Córdoba</strong> es fundamental. Nuestro estudio
+              asesora en la resolución de conflictos con proyección internacional, respaldando
+              tus derechos donde quiera que estés.
             </p>
+            <div className="sub-services-grid">
+              <div className="sub-service-item">
+                <h4>Asesoramiento en Cuestiones de Derecho Internacional Privado</h4>
+                <p>Orientación legal en conflictos que involucran diferentes jurisdicciones.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Reconocimiento y Ejecución de Sentencias y Laudos Extranjeros</h4>
+                <p>Homologación ante tribunales argentinos de fallos y arbitrajes internacionales.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Restitución de Niñas, Niños y Adolescentes</h4>
+                <p>Tramitación de procesos de retorno inmediato ante traslados o retenciones ilícitas.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Reclamo Internacional de Alimentos</h4>
+                <p>Gestión de obligaciones alimentarias entre partes radicadas en distintos países.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Medidas Cautelares en el Extranjero</h4>
+                <p>Coordinación para asegurar bienes o derechos fuera de Argentina.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Reconocimiento de Adopciones Extranjeras</h4>
+                <p>Obtención de validez nacional a resoluciones adoptivas dictadas en otros países.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Reconocimiento de Convenciones Matrimoniales Extranjeras</h4>
+                <p>Validez en Argentina de acuerdos prenupciales o posnupciales celebrados en el exterior.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Sucesiones con Último Domicilio en el Extranjero</h4>
+                <p>Dirección y asesoría en procesos hereditarios que involucran varias jurisdicciones.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Legalización de Instrumentos según la Convención de La Haya</h4>
+                <p>Gestión de apostillas y requisitos para el reconocimiento de documentos extranjeros.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Reconocimiento de Sociedades Constituidas en el Extranjero</h4>
+                <p>Procedimiento para la validez en Argentina de empresas establecidas en otras jurisdicciones.</p>
+              </div>
+            </div>
           </div>
-          <div className="service-item">
-            <h3>2. Fusiones y Adquisiciones (M&A)</h3>
-            <p>
-              Due diligence y auditorías legales.<br />
-              Negociación y redacción de acuerdos de compra-venta.<br />
-              Integración y reestructuración de sociedades.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>3. Cumplimiento Normativo y Compliance</h3>
-            <p>
-              Implementación de políticas de buen gobierno corporativo.<br />
-              Prevención de lavado de activos y corrupción.<br />
-              Evaluación de riesgos legales y regulatorios.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>4. Conflictos Societarios</h3>
-            <p>
-              Solución de disputas entre accionistas o socios.<br />
-              Defensa de derechos en asambleas y juntas directivas.<br />
-              Acciones legales por incumplimientos estatutarios.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>5. Disolución y Liquidación de Sociedades</h3>
-            <p>
-              Procedimientos de disolución amistosa o judicial.<br />
-              Liquidación de activos y pasivos societarios.<br />
-              Distribución de remanentes y cierre formal de la compañía.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      {/* DERECHO TRIBUTARIO */}
-      <section id="tributario" className="services">
-        <h2>Derecho Tributario</h2>
-        {/* Mensaje SEO-friendly para Derecho Tributario */}
-        <p>
-          Un buen <strong>abogado tributario en Córdoba</strong> puede ayudarte a optimizar tu carga 
-          impositiva y a defenderte ante inspecciones o litigios fiscales. En Hasper y Vaca 
-          Estudio Jurídico te ofrecemos planeamiento fiscal, representación ante organismos 
-          de control y consultoría permanente para que tu situación tributaria esté siempre 
-          bajo control.
-        </p>
-        <div className="services-grid">
-          <div className="service-item">
-            <h3>1. Planeamiento Fiscal y Optimización Impositiva</h3>
+
+          {/* 5. DERECHO DE SOCIEDADES */}
+          <div className="service-item" id="sociedades">
+            <h2>Derecho de Sociedades</h2>
+            <div className="service-image-wrapper">
+              <img
+                src="/images/derecho-societario.jpeg"
+                alt="Derecho de Sociedades"
+                className="service-image"
+              />
+            </div>
             <p>
-              Estrategias para reducir cargas fiscales.<br />
-              Asesoría en reorganizaciones empresariales con ventajas tributarias.<br />
-              Análisis de convenios internacionales para evitar la doble imposición.
+              ¿Quieres constituir una empresa y necesitas un <strong>abogado en sociedades en Córdoba</strong>?
+              En Hasper y Vaca Estudio Jurídico te ayudamos desde la creación de tu sociedad hasta
+              su eventual reestructuración, fusión o liquidación. Te asesoramos en cada etapa para
+              que tu negocio cumpla con todas las normas legales vigentes.
             </p>
+            <div className="sub-services-grid">
+              <div className="sub-service-item">
+                <h4>Constitución de Sociedades</h4>
+                <p>Asesoría integral en estatutos, trámites y registro.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Transformación y Fusión</h4>
+                <p>Cambios estructurales y reorganización societaria.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Disolución y Liquidación</h4>
+                <p>Proceso ordenado para el cierre de sociedades.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Auditoría Legal y Compliance</h4>
+                <p>Revisión de procesos internos para asegurar el cumplimiento normativo.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Asambleas y Órganos de Administración</h4>
+                <p>Organización, convocatoria y validación de decisiones societarias.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Conflictos entre Socios</h4>
+                <p>Resolución de disputas internas, defensa de derechos y acuerdos.</p>
+              </div>
+            </div>
           </div>
-          <div className="service-item">
-            <h3>2. Defensa ante Inspecciones y Fiscalizaciones</h3>
+
+          {/* 6. DERECHO TRIBUTARIO */}
+          <div className="service-item" id="tributario">
+            <h2>Derecho Tributario</h2>
+            <div className="service-image-wrapper">
+              <img
+                src="/images/derecho-tributario.jpeg"
+                alt="Derecho Tributario"
+                className="service-image"
+              />
+            </div>
             <p>
-              Representación en procedimientos de verificación de la AFIP.<br />
-              Respuestas a requerimientos y descargos administrativos.<br />
-              Negociación de planes de facilidades de pago.
+              Un buen <strong>abogado tributario en Córdoba</strong> puede ayudarte a optimizar tu carga
+              impositiva y a defenderte ante inspecciones o litigios fiscales. En Hasper y Vaca
+              Estudio Jurídico te ofrecemos planeamiento fiscal, representación ante organismos
+              de control y consultoría permanente para que tu situación tributaria esté siempre
+              bajo control.
             </p>
-          </div>
-          <div className="service-item">
-            <h3>3. Régimen de Promociones e Incentivos Fiscales</h3>
-            <p>
-              Asesoramiento en la obtención de beneficios impositivos.<br />
-              Tramitación de exenciones y créditos fiscales.<br />
-              Análisis de impacto y viabilidad de proyectos especiales.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>4. Litigios Tributarios</h3>
-            <p>
-              Defensa en juicios de determinación de oficio.<br />
-              Recursos ante tribunales fiscales y contenciosos administrativos.<br />
-              Revisión judicial de sanciones y multas impositivas.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>5. Consultoría Permanente</h3>
-            <p>
-              Interpretación y actualización de la normativa tributaria.<br />
-              Evaluación de riesgos impositivos en nuevas inversiones.<br />
-              Asistencia personalizada para personas físicas y jurídicas.
+            <div className="sub-services-grid">
+              <div className="sub-service-item">
+                <h4>Planeamiento Fiscal</h4>
+                <p>Estrategias para minimizar riesgos y cargas impositivas.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Defensa ante Organismos</h4>
+                <p>Representación en inspecciones y actuaciones de AFIP u otros entes.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Consultoría Continua</h4>
+                <p>Monitoreo de obligaciones para evitar sanciones y multas.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Reclamos ante Ajustes Fiscales</h4>
+                <p>Asistencia en objeciones y recursos contra determinaciones de deuda.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Devoluciones y Reintegros de Impuestos</h4>
+                <p>Gestión de trámites para recuperar saldos a favor y créditos fiscales.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Litigios Tributarios</h4>
+                <p>Representación en sede judicial y contencioso-administrativa.</p>
+              </div>
+            </div>
+            {/* Disclaimer o Disclousure al final */}
+            <p className="disclaimer">
+              Consulte por otros servicios o temas no listados. Este no es un listado exhaustivo y estamos disponibles
+              para asesorarlo en cualquier otra cuestión legal que pudiera surgir.
             </p>
           </div>
         </div>

@@ -6,22 +6,28 @@
   text-align: center;
 }
 
-/* Contenedor tipo grid para organizar las tarjetas de servicio */
+/* Contenedor tipo grid para organizar las "RAMAS" de servicio (cada una será una card) */
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
+  grid-template-columns: 1fr; /* Por defecto: 1 columna */
   margin-top: 2rem;
 }
 
 /* Ajuste de columnas en pantallas medianas o grandes */
-@media (min-width: 768px) {
+/* Ajusta los breakpoints a tu preferencia */
+@media (min-width: 600px) {
   .services-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila en pantallas medianas */
+  }
+}
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 tarjetas por fila en pantallas grandes */
   }
 }
 
-/* Tarjeta individual de cada servicio */
+/* Tarjeta individual de cada "rama" */
 .service-item {
   background: #fff;
   padding: 20px;
@@ -30,6 +36,7 @@
   text-align: center;
 }
 
+/* Ajustes al texto dentro de la tarjeta */
 .service-item p {
   line-height: 1.5;
 }
@@ -94,8 +101,9 @@
 .welcome-section {
   margin: 2rem 0;       /* Margen superior e inferior */
   padding: 1.5rem 1rem; /* Relleno interno para que el texto no quede pegado */
-  background-color: #fafafa; /* Color de fondo suave */
   border-radius: 5px;   /* Bordes ligeramente redondeados */
+  text-align: center;  /* Alinea el texto al centro */
+  max-width: 800px;    /* Limita el ancho para mejor legibilidad */
 }
 
 /* Estilos para el título dentro de la welcome-section */
@@ -110,4 +118,91 @@
   margin-bottom: 0;     /* Por si quieres ajustar la separación final */
   font-size: 1rem;
   line-height: 1.5;     /* Facilita la lectura */
+}
+
+/* Contenedor de la imagen principal en cada rama */
+.service-image-wrapper {
+  width: 100%;
+  max-width: 300px;      /* Ajusta este valor según tu diseño */
+  margin: 0 auto 1rem;   /* Centrado y espacio inferior */
+  overflow: hidden;
+  aspect-ratio: 1 / 1;   /* Relación de aspecto cuadrada por defecto */
+  position: relative;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* Recorta la imagen sin deformar */
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de zoom al pasar el cursor */
+.service-image-wrapper:hover .service-image {
+  transform: scale(1.1);
+}
+
+/* Clase opcional para forzar una relación de aspecto 4:3 mediante zoom sin distorsión */
+.image-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+/* NUEVAS SOMBRAS Y EFECTOS SUAVES ADICIONALES */
+.service-item {
+  background: rgba(240, 240, 240, 0.7); /* Color muy suave para diferenciar del fondo */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.service-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+/* Sub-grid para los servicios internos (si deseas mostrarlos) */
+.sub-services-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+}
+@media (min-width: 600px) {
+  .sub-services-grid {
+    grid-template-columns: 1fr 1fr; /* O ajusta a conveniencia */
+  }
+}
+
+/* Tarjetas de los sub-servicios, si aplican */
+.sub-service-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+
+/* Sección de bienvenida */
+.welcome-section {
+  margin: 2rem auto;       /* Margen superior e inferior y centrado horizontal */
+  padding: 1.5rem 1rem; 
+  border-radius: 5px;
+  text-align: center;  /* Alinea el texto al centro */
+  max-width: 800px;    /* Limita el ancho para mejor legibilidad */
+}
+
+/* Estilos para el título dentro de la welcome-section */
+.welcome-section h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  text-align: center; /* Asegura que el título también esté centrado */
+}
+
+/* Estilos para el párrafo dentro de la welcome-section */
+.welcome-section p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center; /* Centra los párrafos */
 }
