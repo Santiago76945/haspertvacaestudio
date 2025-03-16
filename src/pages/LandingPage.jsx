@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FloatingContact from '../components/FloatingContact';
 import '../styles/landingPage.css';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const LandingPage = () => {
@@ -18,8 +19,8 @@ const LandingPage = () => {
             Estudio Jurídico en Córdoba Capital especializado en Derecho de Familia, Laboral, Civil, Societario e Internacional Privado. Asesoría integral y personalizada.
           </p>
           <div className="hero-buttons">
-            <a href="/services" className="button">Nuestros Servicios</a>
-            <a href="/contact" className="button">Contacto</a>
+            <Link to="/services" className="button">Nuestros Servicios</Link>
+            <Link to="/contact" className="button">Contacto</Link>
           </div>
         </div>
       </section>

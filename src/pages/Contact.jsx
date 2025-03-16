@@ -6,12 +6,23 @@ import Footer from '../components/Footer';
 import '../styles/contact.css';
 
 const Contact = () => {
+  
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Evita que el formulario recargue la página
+    
+    // Muestra el mensaje de confirmación
+    alert("¡Gracias por contactarnos! Nuestro equipo se pondrá en contacto a la brevedad.");
+    
+    // (Opcional) Restablecer el formulario después del envío
+    event.target.reset();
+  };
+
   return (
     <div>
       <Header />
       <section className="contact">
         <h2>Contacto</h2>
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={handleSubmit}>
           <label htmlFor="name">Nombre:</label>
           <input type="text" id="name" name="name" required />
           
