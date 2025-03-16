@@ -19,8 +19,8 @@ const Team = () => {
         <h2>Nuestro Equipo</h2>
         <div className="team-grid">
           <div className="team-member">
-            <img src={imagenJoel} alt="Dr. Joel Vaca" />
-            <h3>Dr. Joel Vaca</h3>
+            <img src={imagenJoel} alt="Dr. Joel Roger Vaca" />
+            <h3>Dr. Joel Roger Vaca</h3>
             <p>
               Abogado con extensa y consolidada experiencia en Derecho Civil, Laboral y Comercial. Su reconocida trayectoria profesional lo posiciona como una opción destacada dentro del ámbito jurídico, brindando asesoramiento riguroso, eficaz y orientado a resultados concretos. Su amplio dominio en diversas áreas del Derecho le permite ofrecer soluciones integrales, adaptadas a las necesidades específicas de cada cliente. La confianza y satisfacción de numerosos clientes reflejan claramente su compromiso con la calidad y la excelencia profesional.
             </p>
