@@ -2,37 +2,59 @@
 
 /* Global */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #333;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Elige un color de fondo que tenga alto contraste con el texto. 
+     Si tu fondo del body es oscuro (#242424), puede quedar bien un header negro con texto blanco,
+     o puedes hacer un header claro y destacar. */
+  background-color: #1A1A1A;
+  /* background-color: #ffffff; // Si prefieres un header blanco */
+  color: #fff;
   
-  /* Header */
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(to bottom, #222, #111);
-    padding: 20px 40px;
-    text-align: center;
-    color: white;
-  }
-  
-  .header h1 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  }
-  
-  #header-home {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-  }
-  
-  /* Resto del CSS global, secciones hero, welcome, footer, etc. */
-  /* ... */
-  
+  padding: 1rem 2rem; /* Espaciado interno del header */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para resaltarlo */
+}
+
+/* Ajusta el estilo de tu logo o título */
+.header h1 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/* Estilos para el enlace que envuelve el h1 */
+#header-home {
+  text-decoration: none;
+  color: inherit; /* Mantiene el color blanco */
+}
+
+/* Navegación */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #bbb; /* Un gris claro para hover */
+}

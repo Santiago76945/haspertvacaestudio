@@ -1,108 +1,73 @@
 /* src/styles/landingPage.css */
 
-:root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 320px;
-    min-height: 100vh;
-    background-color: inherit;
-  }
-  
-  /* Tipografía y Enlaces */
-  a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #535bf2;
-  }
-  
-  /* Estilos Específicos para la Landing Page */
-  .landing-page {
-    width: 100%;
-    max-width: 1200px;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .hero {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .logo {
-    width: 100%;
-    max-width: 300px; /* Ajusta este valor según necesites */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    font-size: 2.5em;
-    margin-top: 1rem;
-  }
-  
-  p {
-    font-size: 1.2em;
-    margin: 1rem 0;
-  }
-  
-  .hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  
+/* 
+   Ajustes de contenedor principal para la página de inicio.
+   Se centra el contenido y se da un padding acorde.
+*/
+.landing-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Sección "hero": contiene logo, título, descripción y botones */
+.hero {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Se ajustan los tamaños de fuente para una mejor práctica de legibilidad */
+h2 {
+  font-size: 2em; /* Reducido de 2.5em */
+  margin-top: 1rem;
+}
+
+p {
+  font-size: 1em; /* Reducido de 1.2em */
+  margin: 1rem 0;
+}
+
+/* Botones en la sección hero */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #242424;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.button:hover {
+  background-color: #646cff;
+}
+
+/* Modo claro para la Landing Page */
+@media (prefers-color-scheme: light) {
   .button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #1a1a1a;
-    color: rgba(255, 255, 255, 0.87);
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1em;
-    transition: background-color 0.3s, border 0.3s;
+    background-color: #f9f9f9;
+    color: #213547;
   }
-  
-  .button:hover {
-    background-color: #646cff;
-  }
-  
-  /* Media Queries para Modo Claro */
-  @media (prefers-color-scheme: light) {
-    :root {
-      color: #213547;
-      background-color: #ffffff;
-    }
-    a:hover {
-      color: #747bff;
-    }
-    .button {
-      background-color: #f9f9f9;
-      color: #213547;
-    }
-  }
-  
+}

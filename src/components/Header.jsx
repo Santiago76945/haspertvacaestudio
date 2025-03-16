@@ -1,13 +1,16 @@
 // src/components/Header.jsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/index.css';
+import '../styles/header.css'; // Importa el CSS específico del Header
 
 const Header = () => {
   return (
     <header className="header">
       <h1>
-        <Link id="header-home" to="/">Haspert Vaca Estudio Jurídico</Link>
+        <Link id="header-home" to="/">
+          Haspert Vaca Estudio Jurídico
+        </Link>
       </h1>
       <nav className="nav-menu">
         <ul>
