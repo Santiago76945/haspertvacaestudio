@@ -29,4 +29,16 @@
   height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
+  /* Para que en contenedores amplios la imagen no se expanda más de su tamaño óptimo */
+  max-width: 100%;
 }
+
+@media (min-width: 1200px) {
+  .team-member img {
+    /* Limita el tamaño de la imagen en pantallas muy anchas */
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
