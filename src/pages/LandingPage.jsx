@@ -25,7 +25,7 @@ const LandingPage = () => {
       </section>
 
       <section className="welcome-section">
-        <h2>Bienvenidos a Haspert Vaca Estudio Jurídico</h2>
+        <h2>Bienvenido a Haspert Vaca Estudio Jurídico</h2>
         <p>
           Un equipo de abogados con sede en Córdoba Capital, dedicado a ofrecer soluciones jurídicas eficaces y personalizadas.
           Contamos con profesionales altamente capacitados en Derecho Civil, Laboral, Comercial, de Familia, Internacional y Tributario.

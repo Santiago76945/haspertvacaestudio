@@ -1,20 +1,35 @@
 /* src/styles/floatingContact.css */
 
 .floating-contact {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366; /* Verde estilo WhatsApp */
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* Verde estilo WhatsApp */
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1000;
+
+  /* Añade la animación "pulse" */
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.floating-contact:hover {
+  background-color: #1DAF5A; /* Tono un poco más oscuro en el hover */
+}
+
+/* Definimos la animación "pulse" */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  
-  .floating-contact:hover {
-    background-color: #1DAF5A; /* Tono un poco más oscuro en el hover */
+  50% {
+    transform: scale(1.05); /* Ligero agrandamiento */
   }
-  
+  100% {
+    transform: scale(1);
+  }
+}

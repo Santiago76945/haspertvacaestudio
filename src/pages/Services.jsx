@@ -203,10 +203,6 @@ const Services = () => {
             </p>
             <div className="sub-services-grid">
               <div className="sub-service-item">
-                <h4>Asesoramiento en Cuestiones de Derecho Internacional Privado</h4>
-                <p>Orientación legal en conflictos que involucran diferentes jurisdicciones.</p>
-              </div>
-              <div className="sub-service-item">
                 <h4>Reconocimiento y Ejecución de Sentencias y Laudos Extranjeros</h4>
                 <p>Homologación ante tribunales argentinos de fallos y arbitrajes internacionales.</p>
               </div>
@@ -217,10 +213,6 @@ const Services = () => {
               <div className="sub-service-item">
                 <h4>Reclamo Internacional de Alimentos</h4>
                 <p>Gestión de obligaciones alimentarias entre partes radicadas en distintos países.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Medidas Cautelares en el Extranjero</h4>
-                <p>Coordinación para asegurar bienes o derechos fuera de Argentina.</p>
               </div>
               <div className="sub-service-item">
                 <h4>Reconocimiento de Adopciones Extranjeras</h4>
@@ -333,11 +325,6 @@ const Services = () => {
                 <p>Representación en sede judicial y contencioso-administrativa.</p>
               </div>
             </div>
-            {/* Disclaimer o Disclousure al final */}
-            <p className="disclaimer">
-              Consulte por otros servicios o temas no listados. Este no es un listado exhaustivo y estamos disponibles
-              para asesorarlo en cualquier otra cuestión legal que pudiera surgir.
-            </p>
           </div>
         </div>
       </section>

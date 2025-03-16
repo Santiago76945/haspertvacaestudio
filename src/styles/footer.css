@@ -2,38 +2,43 @@
 
 /* Contenedor principal del footer */
 .footer {
-    /* Asegúrate de no tener margen externo, para que se pegue al final */
-    margin: 0;
-    width: 100%;
-    
-    /* Fondo negro y texto blanco */
-    background-color: #1A1A1A;
-    color: #ffffff;
-  
-    /* Centra el texto y deja algo de relleno */
-    text-align: center;
-    padding: 2rem;
-    
-    /* Para asegurarte de que el relleno no genere ancho extra */
-    box-sizing: border-box;
-  
-    /* Sombra suave opcional */
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-  }
-  
-  /* Estructura interna del contenido */
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Encabezado dentro del footer */
-  .footer-content h3 {
-    margin: 0 0 0.5rem 0;
-  }
-  
-  /* Párrafos, texto, etc. */
-  .footer-content p {
-    margin: 0.25rem 0;
-  }
-  
+  margin: 0;
+  width: 100%;
+
+  background-color: #1A1A1A;
+  color: #ffffff;
+
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  /* Sombra suave opcional */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contenido principal del footer */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content h3 {
+  margin: 0 0 1rem 0;
+}
+
+.footer-content ul {
+  list-style: none;  /* Eliminamos el estilo de puntos */
+  padding: 0;        /* Quitamos padding y margin del ul */
+  margin: 0;
+}
+
+.footer-content li {
+  margin: 0.25rem 0; /* Espacio entre cada línea */
+}
+
+/* Bloque inferior del footer para derechos reservados */
+.footer-bottom {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
