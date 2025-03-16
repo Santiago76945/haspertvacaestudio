@@ -1,5 +1,13 @@
 /* src/styles/landingPage.css */
 
+@font-face {
+  font-family: 'Britannic Bold';
+  src: url('../assets/fonts/BritannicBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Para centrar toda la página y unificar estilos */
 .landing-page {
   width: 100%;
   margin: 0;
@@ -12,8 +20,7 @@
 .hero {
   position: relative;
   width: 100vw;
-  min-height: 100vh;
-  /* Ocupa toda la pantalla */
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +29,6 @@
   overflow: hidden;
 }
 
-/* Capa de fondo con opacidad */
 .hero::before {
   content: "";
   position: absolute;
@@ -32,21 +38,18 @@
   height: 100%;
   background: url('../assets/palacio-justicia.png') center/cover no-repeat;
   filter: brightness(50%);
-  /* Aplica opacidad sin afectar el contenido */
   z-index: -1;
 }
 
-/* Asegurar que el contenido está por encima del fondo */
 .hero-content {
   position: relative;
   z-index: 1;
   color: white;
-  /* Mejor contraste con el fondo */
   padding: 2rem;
   max-width: 80%;
 }
 
-/* Ajustes para el logo */
+/* Logo */
 .logo {
   width: 100%;
   max-width: 300px;
@@ -55,10 +58,19 @@
   margin: 0 auto 1rem auto;
 }
 
-/* Títulos y párrafos en el hero */
-h2 {
-  font-size: 2.5rem;
-  margin-top: 1rem;
+/* Títulos con Britannic Bold y sombra para resaltar */
+.haspert-vaca {
+  font-family: "Britannic Bold", sans-serif;
+  font-size: 3rem; /* Ajusta según desees el tamaño principal */
+  margin: 0.5rem 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Sombra negra difusa */
+}
+
+.estudio-juridico {
+  font-family: "Britannic Bold", sans-serif;
+  font-size: 2rem; /* Un poco más pequeño que "Haspert & Vaca" */
+  margin: 0.5rem 0 1.5rem 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Sombra más sutil */
 }
 
 p {
@@ -100,10 +112,19 @@ p {
   }
 }
 
-/* Ajustes responsivos */
+/* Sección bienvenida */
+.welcome-section {
+  padding: 2rem;
+}
+
+/* Responsividad */
 @media (max-width: 768px) {
-  h2 {
+  .haspert-vaca {
     font-size: 2rem;
+  }
+
+  .estudio-juridico {
+    font-size: 1.5rem;
   }
 
   p {
