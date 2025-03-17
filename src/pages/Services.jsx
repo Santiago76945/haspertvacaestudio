@@ -14,7 +14,7 @@ const Services = () => {
 
       {/* Mensaje de Bienvenida con mención a palabras clave */}
       <section className="welcome-section">
-        <h1>En Hasper y Vaca Estudio Jurídico, estamos para ayudarte</h1>
+        <h1>En Haspert y Vaca Estudio Jurídico, estamos para ayudarte</h1>
         <p>
           Somos un <strong>equipo de abogados en Córdoba capital, Argentina,</strong> con amplia trayectoria en diversas ramas
           del Derecho. Nuestro compromiso con los asuntos legales de cada cliente es absoluto,
@@ -63,7 +63,7 @@ const Services = () => {
             </div>
             <p>
               ¿Buscando un <strong>abogado civil en Córdoba</strong> que defienda tus intereses en temas de
-              contratos, responsabilidad civil o sucesiones? En Hasper y Vaca Estudio Jurídico contamos
+              contratos, responsabilidad civil o sucesiones? En Haspert y Vaca Estudio Jurídico contamos
               con un equipo de profesionales especializados en cada aspecto del Derecho Civil para
               brindarte soluciones efectivas y personalizadas.
             </p>
@@ -108,7 +108,7 @@ const Services = () => {
             </div>
             <p>
               Si necesitas un <strong>abogado de familia en Córdoba</strong> que te oriente sobre
-              divorcios, adopciones o alimentos, estás en el lugar indicado. En Hasper y Vaca Estudio
+              divorcios, adopciones o alimentos, estás en el lugar indicado. En Haspert y Vaca Estudio
               Jurídico manejamos <strong>divorcios internacionales en Córdoba</strong> y en otras jurisdicciones,
               así como todo tipo de procesos familiares con la sensibilidad y profesionalismo
               que mereces.
@@ -250,7 +250,7 @@ const Services = () => {
             </div>
             <p>
               ¿Quieres constituir una empresa y necesitas un <strong>abogado en sociedades en Córdoba</strong>?
-              En Hasper y Vaca Estudio Jurídico te ayudamos desde la creación de tu sociedad hasta
+              En Haspert y Vaca Estudio Jurídico te ayudamos desde la creación de tu sociedad hasta
               su eventual reestructuración, fusión o liquidación. Te asesoramos en cada etapa para
               que tu negocio cumpla con todas las normas legales vigentes.
             </p>
@@ -294,7 +294,7 @@ const Services = () => {
             </div>
             <p>
               Un buen <strong>abogado tributario en Córdoba</strong> puede ayudarte a optimizar tu carga
-              impositiva y a defenderte ante inspecciones o litigios fiscales. En Hasper y Vaca
+              impositiva y a defenderte ante inspecciones o litigios fiscales. En Haspert y Vaca
               Estudio Jurídico te ofrecemos planeamiento fiscal, representación ante organismos
               de control y consultoría permanente para que tu situación tributaria esté siempre
               bajo control.
