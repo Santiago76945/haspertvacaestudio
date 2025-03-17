@@ -146,7 +146,7 @@ const Services = () => {
             <h2>Derecho Comercial</h2>
             <div className="service-image-wrapper">
               <img
-                src="/images/derecho-comercial.jpeg"
+                src="/images/derecho-comercial.png"
                 alt="Derecho Comercial"
                 className="service-image"
               />
@@ -190,7 +190,7 @@ const Services = () => {
             <h2>Derecho Internacional Privado</h2>
             <div className="service-image-wrapper">
               <img
-                src="/images/derecho-internacional.jpeg"
+                src="/images/derecho-internacional.jpg"
                 alt="Derecho Internacional Privado"
                 className="service-image"
               />
@@ -287,7 +287,7 @@ const Services = () => {
             <h2>Derecho Tributario</h2>
             <div className="service-image-wrapper">
               <img
-                src="/images/derecho-tributario.jpeg"
+                src="/images/derecho-tributario.jpg"
                 alt="Derecho Tributario"
                 className="service-image"
               />
