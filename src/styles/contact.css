@@ -1,35 +1,47 @@
 /* src/styles/contact.css */
 
 .contact {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .contact-form label {
-    text-align: left;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact-button {
-    padding: 10px 20px;
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para el mensaje de confirmación */
+.contact-confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.confirmation-image {
+  max-width: 200px;
+  width: 100%;
+}
