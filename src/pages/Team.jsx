@@ -9,6 +9,7 @@ import '../styles/team.css';
 // Importación de imágenes
 import imagenJoel from '../assets/imagen-joel.png';
 import imagenSantiago from '../assets/imagen-santiago.png';
+import imagenFederico from '../assets/imagen-federico.png';
 
 const Team = () => {
   return (
@@ -32,6 +33,13 @@ const Team = () => {
               Abogado especializado en la creación y desarrollo de contenidos pedagógicos digitales en las áreas de Derecho Internacional Público, Derecho Laboral y Derecho Procesal Penal. Sus producciones destacan entre las más reconocidas en el ámbito online, gracias a su calidad académica y claridad expositiva. Cuenta, además, con experiencia docente en la Universidad Blas Pascal, donde integró el equipo académico de la cátedra de Lógica Jurídica con un enfoque orientado a facilitar una comprensión profunda del Derecho de manera sencilla y accesible.
             </p>
           </div>
+          <div className="team-member">
+            <img src={imagenFederico} alt="Dr. Federico Gentile" />
+            <h3>Dr. Federico Gentile</h3>
+            <p>
+              Abogado especializado en Derecho Administrativo, con sólido conocimiento en procedimientos administrativos, contrataciones públicas y litigios contencioso-administrativos. Su experiencia abarca el asesoramiento integral en trámites ante organismos estatales, defensa en licitaciones y concursos públicos, así como representación eficaz en reclamos por responsabilidad estatal y procedimientos sancionatorios. Su enfoque estratégico garantiza soluciones concretas y la efectiva protección de los derechos e intereses de sus clientes frente a la administración pública.
+            </p>
+          </div>
         </div>
       </section>
       <Footer />
@@ -40,3 +48,5 @@ const Team = () => {
 };
 
 export default Team;
+
+

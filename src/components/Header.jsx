@@ -20,7 +20,7 @@ const Header = () => {
     <header className="header">
       <h1>
         <Link id="header-home" to="/">
-          Haspert Vaca Estudio Jurídico
+          VGH Estudio Jurídico
         </Link>
       </h1>
       <nav className="nav-menu">

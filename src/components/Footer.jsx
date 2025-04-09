@@ -7,12 +7,11 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <h3>Haspert Vaca Estudio Jurídico</h3>
+        <h3>VGH Estudio Jurídico</h3>
         <ul>
-          <li>Dirección: Av. Lorem Ipsum 123, Barrio Centro, Córdoba</li>
-          <li>Teléfono: +54 9 9999-9999</li>
+          <li>Dirección: Independencia 387, Ciudad de Cordoba, Argentina</li>
+          <li>Teléfono: +54 9 3437 55-6773</li>
           <li>Email: contacto@haspertvacajuridico.com</li>
-          <li>Instagram: @haspertvacajuridico</li>
           <li>Horario de Atención: Lunes a Viernes de 9:00 a 18:00</li>
         </ul>
       </div>

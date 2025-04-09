@@ -14,7 +14,7 @@ const Services = () => {
 
       {/* Mensaje de Bienvenida con mención a palabras clave */}
       <section className="welcome-section">
-        <h1>En Haspert y Vaca Estudio Jurídico, estamos para ayudarte</h1>
+        <h1>En VGH estudio jurídico, estamos para ayudarte</h1>
         <p>
           Somos un <strong>equipo de abogados en Córdoba capital, Argentina,</strong> con amplia trayectoria en diversas ramas
           del Derecho. Nuestro compromiso con los asuntos legales de cada cliente es absoluto,
@@ -28,11 +28,10 @@ const Services = () => {
         <p>Ir directamente a:</p>
         <ul>
           <li><a href="#civil">Derecho Civil</a></li>
-          <li><a href="#familia">Derecho de Familia</a></li>
           <li><a href="#comercial">Derecho Comercial</a></li>
-          <li><a href="#internacional">Derecho Internacional Privado</a></li>
-          <li><a href="#sociedades">Derecho de Sociedades</a></li>
+          <li><a href="#societario">Derecho Societario</a></li>
           <li><a href="#tributario">Derecho Tributario</a></li>
+          <li><a href="#administrativo">Derecho Administrativo</a></li>
         </ul>
       </nav>
 
@@ -63,11 +62,11 @@ const Services = () => {
             </div>
             <p>
               ¿Buscando un <strong>abogado civil en Córdoba</strong> que defienda tus intereses en temas de
-              contratos, responsabilidad civil o sucesiones? En Haspert y Vaca Estudio Jurídico contamos
+              contratos, responsabilidad civil o sucesiones? En VGH estudio jurídico contamos
               con un equipo de profesionales especializados en cada aspecto del Derecho Civil para
               brindarte soluciones efectivas y personalizadas.
             </p>
-            {/* Sub-servicios: ahora 6 ejemplos */}
+            {/* Sub-servicios */}
             <div className="sub-services-grid">
               <div className="sub-service-item">
                 <h4>Contratos y Obligaciones</h4>
@@ -96,52 +95,7 @@ const Services = () => {
             </div>
           </div>
 
-          {/* 2. DERECHO DE FAMILIA */}
-          <div className="service-item" id="familia">
-            <h2>Derecho de Familia</h2>
-            <div className="service-image-wrapper">
-              <img
-                src="/images/derecho-familia.webp"
-                alt="Derecho de Familia"
-                className="service-image"
-              />
-            </div>
-            <p>
-              Si necesitas un <strong>abogado de familia en Córdoba</strong> que te oriente sobre
-              divorcios, adopciones o alimentos, estás en el lugar indicado. En Haspert y Vaca Estudio
-              Jurídico manejamos <strong>divorcios internacionales en Córdoba</strong> y en otras jurisdicciones,
-              así como todo tipo de procesos familiares con la sensibilidad y profesionalismo
-              que mereces.
-            </p>
-            <div className="sub-services-grid">
-              <div className="sub-service-item">
-                <h4>Divorcios y Separaciones</h4>
-                <p>Procedimientos de mutuo acuerdo o contenciosos, incluyendo su reconocimiento internacional.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Adopciones</h4>
-                <p>Asesoría legal en trámites de adopción nacional e internacional.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Alimentos</h4>
-                <p>Reclamos, convenios y ejecución de obligaciones alimentarias.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Tenencia y Régimen de Visitas</h4>
-                <p>Acuerdos o litigios relacionados con la custodia y visitas de menores.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Filiaciones</h4>
-                <p>Reconocimiento de paternidad y maternidad, impugnaciones y pruebas genéticas.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Violencia Familiar y Órdenes de Protección</h4>
-                <p>Asistencia legal para víctimas y defensas en casos de violencia doméstica.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* 3. DERECHO COMERCIAL */}
+          {/* 2. DERECHO COMERCIAL */}
           <div className="service-item" id="comercial">
             <h2>Derecho Comercial</h2>
             <div className="service-image-wrapper">
@@ -185,72 +139,19 @@ const Services = () => {
             </div>
           </div>
 
-          {/* 4. DERECHO INTERNACIONAL PRIVADO */}
-          <div className="service-item" id="internacional">
-            <h2>Derecho Internacional Privado</h2>
-            <div className="service-image-wrapper">
-              <img
-                src="/images/derecho-internacional.jpg"
-                alt="Derecho Internacional Privado"
-                className="service-image"
-              />
-            </div>
-            <p>
-              En casos con elementos extranjeros, contar con un <strong>abogado especializado en
-                Derecho Internacional Privado en Córdoba</strong> es fundamental. Nuestro estudio
-              asesora en la resolución de conflictos con proyección internacional, respaldando
-              tus derechos donde quiera que estés.
-            </p>
-            <div className="sub-services-grid">
-              <div className="sub-service-item">
-                <h4>Reconocimiento y Ejecución de Sentencias y Laudos Extranjeros</h4>
-                <p>Homologación ante tribunales argentinos de fallos y arbitrajes internacionales.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Restitución de Niñas, Niños y Adolescentes</h4>
-                <p>Tramitación de procesos de retorno inmediato ante traslados o retenciones ilícitas.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Reclamo Internacional de Alimentos</h4>
-                <p>Gestión de obligaciones alimentarias entre partes radicadas en distintos países.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Reconocimiento de Adopciones Extranjeras</h4>
-                <p>Obtención de validez nacional a resoluciones adoptivas dictadas en otros países.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Reconocimiento de Convenciones Matrimoniales Extranjeras</h4>
-                <p>Validez en Argentina de acuerdos prenupciales o posnupciales celebrados en el exterior.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Sucesiones con Último Domicilio en el Extranjero</h4>
-                <p>Dirección y asesoría en procesos hereditarios que involucran varias jurisdicciones.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Legalización de Instrumentos según la Convención de La Haya</h4>
-                <p>Gestión de apostillas y requisitos para el reconocimiento de documentos extranjeros.</p>
-              </div>
-              <div className="sub-service-item">
-                <h4>Reconocimiento de Sociedades Constituidas en el Extranjero</h4>
-                <p>Procedimiento para la validez en Argentina de empresas establecidas en otras jurisdicciones.</p>
-              </div>
-            </div>
-          </div>
-
-
-          {/* 5. DERECHO DE SOCIEDADES */}
-          <div className="service-item" id="sociedades">
-            <h2>Derecho de Sociedades</h2>
+          {/* 3. DERECHO SOCIETARIO */}
+          <div className="service-item" id="societario">
+            <h2>Derecho Societario</h2>
             <div className="service-image-wrapper">
               <img
                 src="/images/derecho-societario.jpeg"
-                alt="Derecho de Sociedades"
+                alt="Derecho Societario"
                 className="service-image"
               />
             </div>
             <p>
               ¿Quieres constituir una empresa y necesitas un <strong>abogado en sociedades en Córdoba</strong>?
-              En Haspert y Vaca Estudio Jurídico te ayudamos desde la creación de tu sociedad hasta
+              En VGH estudio jurídico te ayudamos desde la creación de tu sociedad hasta
               su eventual reestructuración, fusión o liquidación. Te asesoramos en cada etapa para
               que tu negocio cumpla con todas las normas legales vigentes.
             </p>
@@ -282,7 +183,7 @@ const Services = () => {
             </div>
           </div>
 
-          {/* 6. DERECHO TRIBUTARIO */}
+          {/* 4. DERECHO TRIBUTARIO */}
           <div className="service-item" id="tributario">
             <h2>Derecho Tributario</h2>
             <div className="service-image-wrapper">
@@ -294,8 +195,8 @@ const Services = () => {
             </div>
             <p>
               Un buen <strong>abogado tributario en Córdoba</strong> puede ayudarte a optimizar tu carga
-              impositiva y a defenderte ante inspecciones o litigios fiscales. En Haspert y Vaca
-              Estudio Jurídico te ofrecemos planeamiento fiscal, representación ante organismos
+              impositiva y a defenderte ante inspecciones o litigios fiscales. En VGH estudio jurídico
+              te ofrecemos planeamiento fiscal, representación ante organismos
               de control y consultoría permanente para que tu situación tributaria esté siempre
               bajo control.
             </p>
@@ -326,6 +227,51 @@ const Services = () => {
               </div>
             </div>
           </div>
+
+          {/* 5. DERECHO ADMINISTRATIVO */}
+          <div className="service-item" id="administrativo">
+            <h2>Derecho Administrativo</h2>
+            <div className="service-image-wrapper">
+              <img
+                src="/images/derecho-administrativo.png"
+                alt="Derecho Administrativo"
+                className="service-image"
+              />
+            </div>
+            <p>
+              Si necesitas un <strong>abogado especializado en Derecho Administrativo en Córdoba</strong>
+              para afrontar cuestiones relacionadas con la administración pública, licitaciones,
+              responsabilidad estatal o impugnaciones, nuestro equipo ofrece asesoramiento integral
+              para garantizar la defensa de tus derechos e intereses.
+            </p>
+            <div className="sub-services-grid">
+              <div className="sub-service-item">
+                <h4>Procedimientos Administrativos</h4>
+                <p>Asesoramiento en trámites y expedientes ante organismos estatales.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Contrataciones Públicas</h4>
+                <p>Revisión y defensa en licitaciones, concursos y convenios con el Estado.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Responsabilidad del Estado</h4>
+                <p>Reclamos por daños originados por la actividad administrativa.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Régimen Disciplinario y Sancionatorio</h4>
+                <p>Defensa de funcionarios y particulares en procedimientos sancionatorios.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Recursos Administrativos</h4>
+                <p>Impugnaciones y revisiones ante actos ilegítimos de la administración.</p>
+              </div>
+              <div className="sub-service-item">
+                <h4>Litigios Contencioso-Administrativos</h4>
+                <p>Representación en disputas judiciales contra el Estado o entes públicos.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -347,3 +293,4 @@ const Services = () => {
 };
 
 export default Services;
+
