@@ -37,7 +37,7 @@ const Team = () => {
             <img src={imagenFederico} alt="Dr. Federico Gentile" />
             <h3>Dr. Federico Gentile</h3>
             <p>
-              Abogado especializado en Derecho Administrativo, con sólido conocimiento en procedimientos administrativos, contrataciones públicas y litigios contencioso-administrativos. Su experiencia abarca el asesoramiento integral en trámites ante organismos estatales, defensa en licitaciones y concursos públicos, así como representación eficaz en reclamos por responsabilidad estatal y procedimientos sancionatorios. Su enfoque estratégico garantiza soluciones concretas y la efectiva protección de los derechos e intereses de sus clientes frente a la administración pública.
+              Abogado especializado en Derecho Empresarial, Administrativo y Constitucional, con sólida formación en Filosofía del Derecho. Su enfoque combina asesoría estratégica y soluciones eficaces, respaldado por un profundo compromiso con la excelencia y la responsabilidad profesional. Su amplia experiencia y perspectiva filosófica aportan una comprensión integral de cada caso, brindando un servicio confiable y de alta calidad.
             </p>
           </div>
         </div>
