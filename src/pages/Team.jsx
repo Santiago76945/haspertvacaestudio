@@ -29,9 +29,9 @@ const Team = () => {
             "Abogado con extensa y consolidada experiencia en Derecho Civil, Laboral y Comercial. Su reconocida trayectoria profesional lo posiciona como una opción destacada dentro del ámbito jurídico, brindando asesoramiento riguroso, eficaz y orientado a resultados concretos. Su amplio dominio en diversas áreas del Derecho le permite ofrecer soluciones integrales, adaptadas a las necesidades específicas de cada cliente. La confianza y satisfacción de numerosos clientes reflejan claramente su compromiso con la calidad y la excelencia profesional."
         },
         {
-          name: "Dr. Oscar Santiago Haspert Piaggio",
+          name: "Dr. Santiago Haspert Piaggio",
           image: imagenSantiago,
-          alt: "Dr. Oscar Santiago Haspert Piaggio",
+          alt: "Dr. Santiago Haspert Piaggio",
           description:
             "Abogado especializado en la creación y desarrollo de contenidos pedagógicos digitales en las áreas de Derecho Internacional Público, Derecho Laboral y Derecho Procesal Penal. Sus producciones destacan entre las más reconocidas en el ámbito online, gracias a su calidad académica y claridad expositiva. Cuenta, además, con experiencia docente en la Universidad Blas Pascal, donde integró el equipo académico de la cátedra de Lógica Jurídica con un enfoque orientado a facilitar una comprensión profunda del Derecho de manera sencilla y accesible."
         },
@@ -55,9 +55,9 @@ const Team = () => {
             "Attorney with extensive and established experience in Civil, Labor, and Commercial Law. His recognized professional career positions him as a standout option in the legal field, providing rigorous, effective counsel oriented toward concrete results. His broad expertise in various areas of law enables him to offer comprehensive solutions tailored to each client's specific needs. The trust and satisfaction of numerous clients clearly reflect his commitment to quality and professional excellence."
         },
         {
-          name: "Dr. Oscar Santiago Haspert Piaggio",
+          name: "Dr. Santiago Haspert Piaggio",
           image: imagenSantiago,
-          alt: "Attorney Dr. Oscar Santiago Haspert Piaggio",
+          alt: "Attorney Dr. Santiago Haspert Piaggio",
           description:
             "Attorney specialized in creating and developing digital educational content in the fields of Public International Law, Labor Law, and Criminal Procedural Law. His productions are among the most recognized online, thanks to their academic quality and clarity. He also has teaching experience at Blas Pascal University, where he was part of the academic team for the Legal Logic course, focused on facilitating a deep and accessible understanding of the law."
         },
