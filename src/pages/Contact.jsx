@@ -28,45 +28,72 @@ const Contact = () => {
     }
   }, [state.succeeded]);
 
+  // Detectamos el idioma del navegador (por ejemplo, "es", "en-US", etc.)
+  const lang = navigator.language || navigator.userLanguage;
+  const isSpanish = lang.toLowerCase().startsWith('es');
+
+  // Contenido en español e inglés
+  const content = {
+    es: {
+      title: "Contacto",
+      confirmationAlt: "Mensaje Enviado",
+      confirmationText: "Muchas gracias por comunicarse con nosotros, nos pondremos en contacto con usted a la brevedad.",
+      labelName: "Nombre:",
+      labelEmail: "Email:",
+      labelMessage: "Mensaje:",
+      buttonText: "Enviar Mensaje"
+    },
+    en: {
+      title: "Contact",
+      confirmationAlt: "Message Sent",
+      confirmationText: "Thank you for getting in touch with us, we will contact you shortly.",
+      labelName: "Name:",
+      labelEmail: "Email:",
+      labelMessage: "Message:",
+      buttonText: "Send Message"
+    }
+  };
+
+  // Seleccionamos el contenido según el idioma detectado
+  const selectedContent = isSpanish ? content.es : content.en;
+
   return (
     <div>
       <Header />
       <section className="contact">
-        <h2>Contacto</h2>
+        <h2>{selectedContent.title}</h2>
         {submitted ? (
           <div className="contact-confirmation">
             <img
               src="/images/message-sent.png" // Asegúrate de colocar la imagen en la ruta correcta
-              alt="Mensaje Enviado"
+              alt={selectedContent.confirmationAlt}
               className="confirmation-image"
             />
-            <p>
-              Muchas gracias por comunicarse con nosotros, nos pondremos en contacto con usted a la brevedad.
-            </p>
+            <p>{selectedContent.confirmationText}</p>
           </div>
         ) : (
           <form className="contact-form" onSubmit={handleSubmit}>
-            <label htmlFor="name">Nombre:</label>
+            <label htmlFor="name">{selectedContent.labelName}</label>
             <input type="text" id="name" name="name" required />
 
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">{selectedContent.labelEmail}</label>
             <input type="email" id="email" name="email" required />
             <ValidationError 
-              prefix="Email" 
+              prefix={selectedContent.labelEmail} 
               field="email"
               errors={state.errors}
             />
 
-            <label htmlFor="message">Mensaje:</label>
+            <label htmlFor="message">{selectedContent.labelMessage}</label>
             <textarea id="message" name="message" rows="5" required></textarea>
             <ValidationError 
-              prefix="Mensaje" 
+              prefix={selectedContent.labelMessage} 
               field="message"
               errors={state.errors}
             />
 
             <button type="submit" className="contact-button" disabled={state.submitting}>
-              Enviar Mensaje
+              {selectedContent.buttonText}
             </button>
           </form>
         )}

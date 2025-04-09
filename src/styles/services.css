@@ -205,3 +205,75 @@
   line-height: 1.5;
   text-align: center; /* Centra los párrafos */
 }
+
+/* ----------------------------------
+   NUEVA SECCIÓN: Breve descripción
+   de cada rama (service-intro-section)
+------------------------------------- */
+.service-intro-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.service-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  /* Se adaptará automáticamente según el espacio disponible */
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Tarjeta con breve descripción de cada rama */
+.service-intro-item {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Ajusta según prefieras (left, center, etc.) */
+}
+
+/* Títulos dentro de la intro */
+.service-intro-item h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Párrafos dentro de la intro */
+.service-intro-item p {
+  margin-bottom: 1rem;
+}
+
+/* Botón "Más información" con estilo similar a quick-links */
+.btn-more-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  
+  /* Ajusta la combinación de colores a tu gusto */
+  background-color: #242424; 
+  color: #f0f0f0;
+}
+
+/* Efecto hover */
+.btn-more-info:hover {
+  background-color: #646cff;
+}
+
+/* Modo claro opcional, si quieres mantener coherencia con quick-links */
+@media (prefers-color-scheme: light) {
+  .btn-more-info {
+    background-color: #f9f9f9;
+    color: #213547;
+  }
+  .btn-more-info:hover {
+    background-color: #646cff;
+    color: #fff; /* Para asegurar el contraste en hover */
+  }
+}
