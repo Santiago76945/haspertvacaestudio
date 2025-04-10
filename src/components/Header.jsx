@@ -28,8 +28,8 @@ const Header = () => {
   ];
 
   // Definimos el título del header según el idioma
-  const spanishTitle = 'VGH Estudio Jurídico';
-  const englishTitle = 'VGH Legal Studio';
+  const spanishTitle = 'VGH';
+  const englishTitle = 'VGH';
 
   // Seleccionamos el contenido según el idioma detectado
   const menuItems = isSpanish ? spanishMenu : englishMenu;
