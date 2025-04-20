@@ -13,8 +13,8 @@ const Footer = () => {
     heading: "VGH Estudio Jurídico",
     address: "Dirección: Independencia 387, Ciudad de Córdoba, Argentina",
     phone: "Teléfono: +54 9 3437 55-6773",
-    email: "Email: VGHEstudioJuridico@gmail.com",
-    schedule: "Horario de Atención: Lunes a Viernes de 9:00 a 18:00",
+    email: "Email: estudioVGH@yahoo.com",
+    schedule: "Horario de Atención: Lunes a Viernes de 10:00 a 17:00",
     rights: "Todos los derechos reservados."
   };
 
@@ -23,8 +23,8 @@ const Footer = () => {
     heading: "VGH Legal Studio",
     address: "Address: Independencia 387, Córdoba City, Argentina",
     phone: "Phone: +54 9 3437 55-6773",
-    email: "Email: VGHEstudioJuridico@gmail.com",
-    schedule: "Office Hours: Monday to Friday from 9:00 to 18:00",
+    email: "Email: estudioVGH@yahoo.com",
+    schedule: "Office Hours: Monday to Friday from 10:00 to 17:00",
     rights: "All rights reserved."
   };
 
