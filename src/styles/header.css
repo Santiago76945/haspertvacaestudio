@@ -56,3 +56,8 @@
     color: #bbb;
   }
   
+  .header-logo {
+    max-height: 50px;    /* o el alto que necesites */
+    height: auto;
+    width: auto;
+  }
