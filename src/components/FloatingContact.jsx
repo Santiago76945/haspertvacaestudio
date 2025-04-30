@@ -13,7 +13,7 @@ const FloatingContact = () => {
 
   return (
     <a 
-      href="https://wa.me/5493437556773" 
+      href="https://wa.me/5493517432323" 
       target="_blank" 
       rel="noopener noreferrer" 
       className="floating-contact"

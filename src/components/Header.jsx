@@ -3,12 +3,13 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/header.css'; // Importa el CSS específico del Header
+import logo from '../assets/logo.png'; // Importar el nuevo logo
 
 const Header = () => {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  // Detectamos el idioma del navegador (por ejemplo, "es", "en-US", etc.)
+  // Detectamos el idioma del navegador
   const lang = navigator.language || navigator.userLanguage;
   const isSpanish = lang.toLowerCase().startsWith('es');
 
@@ -27,21 +28,17 @@ const Header = () => {
     { path: '/team', label: 'Team' },
   ];
 
-  // Definimos el título del header según el idioma
-  const spanishTitle = 'VGH';
-  const englishTitle = 'VGH';
-
-  // Seleccionamos el contenido según el idioma detectado
+  // Seleccionamos el contenido según el idioma
   const menuItems = isSpanish ? spanishMenu : englishMenu;
-  const title = isSpanish ? spanishTitle : englishTitle;
+  const titleAlt = isSpanish
+    ? 'Logo VGH Estudio Jurídico en Córdoba Capital'
+    : 'VGH Legal Studio Logo in Córdoba Capital';
 
   return (
     <header className="header">
-      <h1>
-        <Link id="header-home" to="/">
-          {title}
-        </Link>
-      </h1>
+      <Link to="/">
+        <img src={logo} alt={titleAlt} className="header-logo" />
+      </Link>
       <nav className="nav-menu">
         <ul>
           {menuItems
