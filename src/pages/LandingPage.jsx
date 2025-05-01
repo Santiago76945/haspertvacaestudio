@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Header from '../components/Header';
+import Reviews from '../components/Reviews';
 import Footer from '../components/Footer';
 import FloatingContact from '../components/FloatingContact';
 import '../styles/landingPage.css';
@@ -74,6 +75,9 @@ const LandingPage = () => {
         <h2>{content.welcomeHeading}</h2>
         <p>{content.welcomeText}</p>
       </section>
+
+      {/* Carrusel de reseñas */}
+      <Reviews />
 
       <Footer />
       <FloatingContact />

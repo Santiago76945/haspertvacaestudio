@@ -1,0 +1,116 @@
+/* src/styles/reviews.css */
+
+/* Fondo del carrusel */
+.reviews-carousel {
+    position: relative;
+    padding: 2rem;
+    background-color: #f0f4f8;  /* Cambia por tu color */
+  }
+  
+  /* Origen clickeable */
+  .reviews-origin {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .reviews-origin-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .reviews-origin-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Botones */
+  .review-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+    z-index: 2;
+    transition: background 0.3s ease;
+  }
+  .review-button:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+  .review-button:hover:not(:disabled) {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .review-button.prev { left: 1rem; }
+  .review-button.next { right: 1rem; }
+  
+  /* Wrapper */
+  .reviews-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden;
+  }
+  
+  /* Tarjeta individual con animación suave */
+  .review-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+  
+    /* Animación de entrada */
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  .review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Estrellas */
+  .review-stars {
+    margin-bottom: 0.8rem;
+  }
+  .star {
+    font-size: 1.1rem;
+    color: #ffc107;
+    margin: 0 1px;
+  }
+  
+  /* Comentario y nombre */
+  .review-comment {
+    flex-grow: 1;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  .review-name {
+    font-weight: bold;
+    color: #111;
+    font-size: 0.95rem;
+  }
+  
+  /* Keyframes de fade-in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
