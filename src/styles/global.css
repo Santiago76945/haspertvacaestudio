@@ -3,7 +3,7 @@
 /* ===============================
    0. Variables
    =============================== */
-:root {
+   :root {
     --color-bg: #f9f9f9;
     --color-primary: #646cff;
     --color-primary-dark: #4a54c1;
@@ -41,12 +41,10 @@ body {
 /* ===============================
    2. Page wrappers
    =============================== */
-.services-page,
-.reputacion-page {
+.services-page {
     max-width: 1280px;
     margin: 0 auto;
     padding: var(--spacing-lg) var(--spacing-md) 4rem;
-    /* espacio extra abajo */
     background: var(--color-bg);
     text-align: center;
 }
@@ -79,20 +77,12 @@ body {
     border-radius: var(--radius);
 }
 
-.hero .description,
-.reputacion-hero .description {
+.hero .description {
     max-width: 800px;
     margin: 0 auto var(--spacing-lg);
     font-size: var(--font-base);
     color: var(--color-text-muted);
     line-height: var(--line-height);
-}
-
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
 }
 
 /* ===============================
@@ -139,7 +129,7 @@ body {
 .card-content {
     flex: 1;
     padding: var(--spacing-md);
-    text-align: left;
+    text-align: center; /* centrado global */
 }
 
 .card-title {
@@ -180,15 +170,16 @@ body {
 }
 
 /* ===============================
-   8. Lists & paragraphs
+   8. Textos y listas globales
    =============================== */
 .services-page p,
-.services-page ul,
-.reputacion-page p,
-.reputacion-page ul {
+.services-page ul {
+    font-family: inherit;
+    font-size: var(--font-base);
+    line-height: var(--line-height);
     max-width: 90%;
     margin: 0 auto var(--spacing-lg);
-    text-align: left;
+    text-align: center; /* o center si lo preferís */
 }
 
 /* ===============================
@@ -213,21 +204,16 @@ img {
     }
 
     .services-page p,
-    .services-page ul,
-    .reputacion-page p,
-    .reputacion-page ul {
+    .services-page ul {
         text-align: center;
     }
 }
 
 /* ===============================
-   11. Footer & Header Breakout
+   11. Header & Footer full width
    =============================== */
-/* Para que header y footer queden a todo lo ancho del viewport */
-.services-page>header,
-.reputacion-page>header,
-.services-page>footer,
-.reputacion-page>footer {
+.services-page > header,
+.services-page > footer {
     position: relative;
     left: 50%;
     right: 50%;
@@ -237,30 +223,8 @@ img {
 }
 
 /* ===============================
-   12. Last-section bottom margin
+   12. Bottom margin last section
    =============================== */
-.reputacion-page section:last-of-type,
 .services-page section:last-of-type {
     margin-bottom: var(--spacing-lg);
 }
-
-/* Cambiar la alineación del contenido de las tarjetas a centrado */
-.card-content {
-    padding: var(--spacing-md);
-    text-align: center;
-    /* antes estaba left */
-}
-
-/* Opcional: si quieres centrar los párrafos y listas dentro de .services-page */
-.services-page p,
-.services-page ul {
-    text-align: center;
-}
-
-/* src/styles/global.css */
-.services-page {
-    padding: 0 var(--spacing-md) 0;
-    /* quito el padding top y bottom */
-    text-align: center;
-}
-

@@ -4,22 +4,20 @@ import React, { useEffect, useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import FloatingContact from '../components/FloatingContact';
+import '../styles/global.css';
 import '../styles/contact.css';
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xgvaokzq");
   const [submitted, setSubmitted] = useState(false);
 
-  // Al cargar el componente, verificamos si ya se envió un mensaje hoy
   useEffect(() => {
     const storedDate = localStorage.getItem('contactSubmittedDate');
-    const today = new Date().toISOString().split('T')[0]; // Formato YYYY-MM-DD
-    if (storedDate === today) {
-      setSubmitted(true);
-    }
+    const today = new Date().toISOString().split('T')[0];
+    if (storedDate === today) setSubmitted(true);
   }, []);
 
-  // Cuando el envío es exitoso, guardamos la fecha actual y marcamos que se ha enviado
   useEffect(() => {
     if (state.succeeded) {
       const today = new Date().toISOString().split('T')[0];
@@ -28,16 +26,15 @@ const Contact = () => {
     }
   }, [state.succeeded]);
 
-  // Detectamos el idioma del navegador (por ejemplo, "es", "en-US", etc.)
   const lang = navigator.language || navigator.userLanguage;
   const isSpanish = lang.toLowerCase().startsWith('es');
 
-  // Contenido en español e inglés
   const content = {
     es: {
       title: "Contacto",
       confirmationAlt: "Mensaje Enviado",
-      confirmationText: "Muchas gracias por comunicarse con nosotros, nos pondremos en contacto con usted a la brevedad.",
+      confirmationText:
+        "Muchas gracias por comunicarse con nosotros, nos pondremos en contacto con usted a la brevedad.",
       labelName: "Nombre:",
       labelEmail: "Email:",
       labelMessage: "Mensaje:",
@@ -46,58 +43,96 @@ const Contact = () => {
     en: {
       title: "Contact",
       confirmationAlt: "Message Sent",
-      confirmationText: "Thank you for getting in touch with us, we will contact you shortly.",
+      confirmationText:
+        "Thank you for getting in touch with us, we will contact you shortly.",
       labelName: "Name:",
       labelEmail: "Email:",
       labelMessage: "Message:",
       buttonText: "Send Message"
     }
-  };
-
-  // Seleccionamos el contenido según el idioma detectado
-  const selectedContent = isSpanish ? content.es : content.en;
+  }[isSpanish ? 'es' : 'en'];
 
   return (
-    <div>
+    <div className="services-page">
       <Header />
-      <section className="contact">
-        <h2>{selectedContent.title}</h2>
+      <FloatingContact />
+
+      <section>
+        <h1 className="section-title">{content.title}</h1>
+
         {submitted ? (
           <div className="contact-confirmation">
             <img
-              src="/images/message-sent.png" // Asegúrate de colocar la imagen en la ruta correcta
-              alt={selectedContent.confirmationAlt}
+              src="/images/message-sent.png"
+              alt={content.confirmationAlt}
               className="confirmation-image"
             />
-            <p>{selectedContent.confirmationText}</p>
+            <p>{content.confirmationText}</p>
           </div>
         ) : (
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <label htmlFor="name">{selectedContent.labelName}</label>
-            <input type="text" id="name" name="name" required />
+          <>
+            <div className="card">
+              <div className="card-inner">
+                <div className="card-content">
+                  <form className="contact-form" onSubmit={handleSubmit}>
+                    <label htmlFor="name">{content.labelName}</label>
+                    <input type="text" id="name" name="name" required />
 
-            <label htmlFor="email">{selectedContent.labelEmail}</label>
-            <input type="email" id="email" name="email" required />
-            <ValidationError 
-              prefix={selectedContent.labelEmail} 
-              field="email"
-              errors={state.errors}
-            />
+                    <label htmlFor="email">{content.labelEmail}</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                    <ValidationError
+                      prefix={content.labelEmail}
+                      field="email"
+                      errors={state.errors}
+                    />
 
-            <label htmlFor="message">{selectedContent.labelMessage}</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <ValidationError 
-              prefix={selectedContent.labelMessage} 
-              field="message"
-              errors={state.errors}
-            />
+                    <label htmlFor="message">{content.labelMessage}</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      required
+                    ></textarea>
+                    <ValidationError
+                      prefix={content.labelMessage}
+                      field="message"
+                      errors={state.errors}
+                    />
 
-            <button type="submit" className="contact-button" disabled={state.submitting}>
-              {selectedContent.buttonText}
-            </button>
-          </form>
+                    <button
+                      type="submit"
+                      className="btn"
+                      disabled={state.submitting}
+                    >
+                      {content.buttonText}
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div className="hero-buttons">
+              <a href="tel:+543517432323" className="btn">
+                {isSpanish ? 'Llamanos sin compromiso' : 'Call us'}
+              </a>
+              <a
+                href="https://wa.me/543517432323"
+                className="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {isSpanish ? 'Consultanos por WhatsApp' : 'WhatsApp us'}
+              </a>
+            </div>
+          </>
         )}
       </section>
+
       <Footer />
     </div>
   );

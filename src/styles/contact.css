@@ -1,47 +1,71 @@
 /* src/styles/contact.css */
 
-.contact {
-  padding: 60px 20px;
-  text-align: center;
+/* Aseguramos que la tarjeta del formulario se centre y no se encime con los botones */
+.services-page section > .card {
+  max-width: 500px;
+  margin: 0 auto var(--spacing-lg);
 }
 
-.contact-form {
+/* El contenedor de botones siempre debajo de la tarjeta, centrado */
+.services-page section .hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) auto 0; /* separa del card y centra */
   max-width: 500px;
-  margin: 0 auto;
+}
+
+/* Form styling dentro de la card */
+.contact-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: var(--spacing-md);
 }
 
 .contact-form label {
   text-align: left;
+  font-weight: 500;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 10px;
+  padding: var(--spacing-sm);
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: var(--radius);
+  width: 100%;
+  font-family: inherit;
+  font-size: var(--font-base);
 }
 
-.contact-button {
-  padding: 10px 20px;
-  background: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+/* Asegura que el botón del form alinee a la izquierda dentro de la card */
+.contact-form .btn {
+  align-self: flex-start;
 }
 
-/* Estilos para el mensaje de confirmación */
+/* Confirmation styles */
 .contact-confirmation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: var(--spacing-lg);
+  max-width: 500px;
+  margin: 0 auto var(--spacing-lg);
 }
 
 .confirmation-image {
   max-width: 200px;
   width: 100%;
+}
+
+/* Ajuste de ancho para el formulario */
+.services-page section > .card {
+  width: 90vw;      /* 90% del ancho de la ventana */
+  max-width: none;  /* desactiva cualquier max-width anterior */
+  margin: 0 auto var(--spacing-lg);
+}
+
+/* Centrar el botón de envío dentro del formulario */
+.contact-form .btn {
+  align-self: center;  /* en lugar de flex-start */
 }

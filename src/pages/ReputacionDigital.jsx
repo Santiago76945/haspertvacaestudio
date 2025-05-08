@@ -15,7 +15,7 @@ const ReputacionDigital = () => {
 
             <section className="hero">
                 <h1 className="section-title">Reputación Digital</h1>
-                <h2 className="subtitle">Defendé tu nombre en Internet</h2>
+                <h2 className="subtitle">Defendemos tu nombre en Internet</h2>
                 <img src={heroImage} alt="Reputación Digital" className="hero-image" />
                 <p>
                     ¿Publicaron algo falso, ofensivo o perjudicial sobre vos en redes sociales o buscadores? En VGH Estudio Jurídico removemos publicaciones lesivas en <strong>Facebook, Instagram, X (Twitter), Google, TikTok y más</strong>. Sin que tengas que intervenir, nos ocupamos de todo el proceso: bajamos la publicación, gestionamos la indemnización ante la plataforma e identificamos a los ofensores. Contáctanos sin compromiso. Defendemos tu nombre y tu imagen en Internet.
@@ -46,7 +46,7 @@ const ReputacionDigital = () => {
             <section>
                 <h2 className="section-title">¿Qué garantías brindamos?</h2>
                 <p>
-                    Servicio nacional, totalmente <strong>online</strong> y sin pasos presenciales. Atención personalizada en todo el país, con respaldo legal según el <em>Código Civil y Comercial</em> y la <em>Ley de Protección de Datos</em>.
+                    Servicio nacional, totalmente <strong>online</strong> y sin pasos presenciales. Atención personalizada en todo el país, con respaldo legal según el <em>Código Civil y Comercial</em> y la <em>Ley de Protección de Datos</em>. Tu consulta no es molestia.
                 </p>
             </section>
 
