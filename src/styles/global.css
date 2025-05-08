@@ -1,0 +1,266 @@
+/* src/styles/global.css */
+
+/* ===============================
+   0. Variables
+   =============================== */
+:root {
+    --color-bg: #f9f9f9;
+    --color-primary: #646cff;
+    --color-primary-dark: #4a54c1;
+    --color-text: #213547;
+    --color-text-muted: #555;
+    --radius: 8px;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --font-base: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 2rem;
+    --line-height: 1.6;
+}
+
+/* ===============================
+   1. Reset & Base
+   =============================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: var(--font-base);
+    line-height: var(--line-height);
+    color: var(--color-text);
+    background: #fff;
+}
+
+/* ===============================
+   2. Page wrappers
+   =============================== */
+.services-page,
+.reputacion-page {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-md) 4rem;
+    /* espacio extra abajo */
+    background: var(--color-bg);
+    text-align: center;
+}
+
+/* ===============================
+   3. Section titles & subtitles
+   =============================== */
+.section-title,
+.title {
+    font-size: var(--font-xl);
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: var(--font-lg);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-muted);
+}
+
+/* ===============================
+   4. Hero image & description
+   =============================== */
+.hero-image {
+    display: block;
+    margin: 0 auto var(--spacing-lg);
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+.hero .description,
+.reputacion-hero .description {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+    font-size: var(--font-base);
+    color: var(--color-text-muted);
+    line-height: var(--line-height);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* ===============================
+   5. Cards grid
+   =============================== */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+}
+
+/* ===============================
+   6. Card styles
+   =============================== */
+.card {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    flex: 1;
+    padding: var(--spacing-md);
+    text-align: left;
+}
+
+.card-title {
+    font-size: var(--font-lg);
+    margin: 0 0 var(--spacing-sm);
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.card-desc {
+    font-size: var(--font-base);
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+    line-height: var(--line-height);
+}
+
+/* ===============================
+   7. Button styles
+   =============================== */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-size: var(--font-base);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--color-primary-dark);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   8. Lists & paragraphs
+   =============================== */
+.services-page p,
+.services-page ul,
+.reputacion-page p,
+.reputacion-page ul {
+    max-width: 90%;
+    margin: 0 auto var(--spacing-lg);
+    text-align: left;
+}
+
+/* ===============================
+   9. Global images
+   =============================== */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===============================
+   10. Responsive tweaks
+   =============================== */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .services-page p,
+    .services-page ul,
+    .reputacion-page p,
+    .reputacion-page ul {
+        text-align: center;
+    }
+}
+
+/* ===============================
+   11. Footer & Header Breakout
+   =============================== */
+/* Para que header y footer queden a todo lo ancho del viewport */
+.services-page>header,
+.reputacion-page>header,
+.services-page>footer,
+.reputacion-page>footer {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+}
+
+/* ===============================
+   12. Last-section bottom margin
+   =============================== */
+.reputacion-page section:last-of-type,
+.services-page section:last-of-type {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Cambiar la alineación del contenido de las tarjetas a centrado */
+.card-content {
+    padding: var(--spacing-md);
+    text-align: center;
+    /* antes estaba left */
+}
+
+/* Opcional: si quieres centrar los párrafos y listas dentro de .services-page */
+.services-page p,
+.services-page ul {
+    text-align: center;
+}
+
+/* src/styles/global.css */
+.services-page {
+    padding: 0 var(--spacing-md) 0;
+    /* quito el padding top y bottom */
+    text-align: center;
+}
+
