@@ -44,7 +44,6 @@ body {
 .services-page {
     max-width: 1280px;
     margin: 0 auto;
-    padding: var(--spacing-lg) var(--spacing-md) 4rem;
     background: var(--color-bg);
     text-align: center;
 }
