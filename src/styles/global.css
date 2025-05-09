@@ -3,7 +3,7 @@
 /* ===============================
    0. Variables
    =============================== */
-   :root {
+:root {
     --color-bg: #f9f9f9;
     --color-primary: #646cff;
     --color-primary-dark: #4a54c1;
@@ -20,8 +20,8 @@
 }
 
 /* ===============================
-   1. Reset & Base
-   =============================== */
+     1. Reset & Base
+     =============================== */
 *,
 *::before,
 *::after {
@@ -39,8 +39,8 @@ body {
 }
 
 /* ===============================
-   2. Page wrappers
-   =============================== */
+     2. Page wrappers
+     =============================== */
 .services-page {
     max-width: 1280px;
     margin: 0 auto;
@@ -49,8 +49,8 @@ body {
 }
 
 /* ===============================
-   3. Section titles & subtitles
-   =============================== */
+     3. Section titles & subtitles
+     =============================== */
 .section-title,
 .title {
     font-size: var(--font-xl);
@@ -66,14 +66,12 @@ body {
 }
 
 /* ===============================
-   4. Hero image & description
-   =============================== */
+     4. Hero image & description
+     =============================== */
 .hero-image {
-    display: block;
-    margin: 0 auto var(--spacing-lg);
+    width: 100%;
     max-width: 100%;
     height: auto;
-    border-radius: var(--radius);
 }
 
 .hero .description {
@@ -85,8 +83,8 @@ body {
 }
 
 /* ===============================
-   5. Cards grid
-   =============================== */
+     5. Cards grid
+     =============================== */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -97,8 +95,8 @@ body {
 }
 
 /* ===============================
-   6. Card styles
-   =============================== */
+     6. Card styles
+     =============================== */
 .card {
     background: #fff;
     border-radius: var(--radius);
@@ -128,7 +126,7 @@ body {
 .card-content {
     flex: 1;
     padding: var(--spacing-md);
-    text-align: center; /* centrado global */
+    text-align: center;
 }
 
 .card-title {
@@ -146,8 +144,8 @@ body {
 }
 
 /* ===============================
-   7. Button styles
-   =============================== */
+     7. Button styles
+     =============================== */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.25rem;
@@ -169,8 +167,8 @@ body {
 }
 
 /* ===============================
-   8. Textos y listas globales
-   =============================== */
+     8. Textos y listas globales
+     =============================== */
 .services-page p,
 .services-page ul {
     font-family: inherit;
@@ -178,41 +176,22 @@ body {
     line-height: var(--line-height);
     max-width: 90%;
     margin: 0 auto var(--spacing-lg);
-    text-align: center; /* o center si lo preferís */
+    text-align: center;
 }
 
 /* ===============================
-   9. Global images
-   =============================== */
+     9. Global images
+     =============================== */
 img {
     max-width: 100%;
     height: auto;
 }
 
 /* ===============================
-   10. Responsive tweaks
-   =============================== */
-@media (max-width: 768px) {
-    .card {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .services-page p,
-    .services-page ul {
-        text-align: center;
-    }
-}
-
-/* ===============================
-   11. Header & Footer full width
-   =============================== */
-.services-page > header,
-.services-page > footer {
+     11. Header & Footer full width
+     =============================== */
+.services-page>header,
+.services-page>footer {
     position: relative;
     left: 50%;
     right: 50%;
@@ -222,8 +201,8 @@ img {
 }
 
 /* ===============================
-   12. Bottom margin last section
-   =============================== */
+     12. Bottom margin last section
+     =============================== */
 .services-page section:last-of-type {
     margin-bottom: var(--spacing-lg);
 }
