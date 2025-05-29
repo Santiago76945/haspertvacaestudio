@@ -16,6 +16,7 @@ import ReputacionDigital from './pages/ReputacionDigital';
 import DerechoInternacionalPrivado from './pages/DerechoInternacionalPrivado';
 import Penal from './pages/Penal';
 import EnglishSpeakingLawyer from './pages/EnglishSpeakingLawyer';
+import CiudadaniaArgentina from './pages/CiudadaniaArgentina';
 
 const App = () => {
   return (
@@ -45,6 +46,14 @@ const App = () => {
 
         {/* Advanced Practice Areas */}
         <Route path="/reputacion-digital" element={<ReputacionDigital />} />
+        <Route
+          path="/ciudadania-argentina"
+          element={<CiudadaniaArgentina />}
+        />
+        <Route
+          path="/argentine-citizenship"
+          element={<CiudadaniaArgentina />}
+        />
 
         {/* Other Pages */}
         <Route path="/contact" element={<Contact />} />

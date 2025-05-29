@@ -7,7 +7,7 @@ import FloatingContact from '../components/FloatingContact';
 import '../styles/global.css';
 
 const Services = () => {
-  const lang = navigator.language; // ✅ corregido
+  const lang = navigator.language;
   const isSpanish = lang.toLowerCase().startsWith('es');
 
   const branches = isSpanish
@@ -145,6 +145,14 @@ const Services = () => {
           image: '/images/abogado-habla-inglesa.png',
           alt: 'Abogado de habla inglesa',
         },
+        {
+          path: '/ciudadania-argentina',
+          title: 'Ciudadanía Argentina',
+          description:
+            'Asesoramiento integral para la obtención de la ciudadanía argentina: requisitos, plazos y documentación.',
+          image: '/images/ciudadania-argentina.png',
+          alt: 'Ciudadanía Argentina',
+        },
       ]
     : [
         {
@@ -161,6 +169,14 @@ const Services = () => {
           description: 'Bilingual legal counsel for expats & businesses.',
           image: '/images/abogado-habla-inglesa.png',
           alt: 'English-Speaking Lawyer',
+        },
+        {
+          path: '/argentine-citizenship',
+          title: 'Argentine Citizenship',
+          description:
+            'Comprehensive guidance to obtain Argentine citizenship: requirements, timelines & documentation.',
+          image: '/images/ciudadania-argentina.png',
+          alt: 'Argentine Citizenship',
         },
       ];
 
@@ -197,9 +213,7 @@ const Services = () => {
 
       <section className="services-overview">
         <h1 className="section-title">
-          {isSpanish
-            ? 'Áreas de Práctica Avanzada'
-            : 'Advanced Practice Areas'}
+          {isSpanish ? 'Áreas de Práctica Avanzada' : 'Advanced Practice Areas'}
         </h1>
         <div className="cards-container">
           {advanced.map((item) => (
