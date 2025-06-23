@@ -117,11 +117,11 @@ const Contact = () => {
             </div>
 
             <div className="hero-buttons">
-              <a href="tel:+543517432323" className="btn">
+              <a href="tel:+5493437556773" className="btn">
                 {isSpanish ? 'Llamanos sin compromiso' : 'Call us'}
               </a>
               <a
-                href="https://wa.me/543517432323"
+                href="https://wa.me/5493437556773"
                 className="btn"
                 target="_blank"
                 rel="noopener noreferrer"

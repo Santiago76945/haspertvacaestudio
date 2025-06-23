@@ -1,6 +1,5 @@
 // src/components/FloatingContact.jsx
 
-import React from 'react';
 import '../styles/floatingContact.css'; // Asegúrate de que la ruta sea correcta
 
 const FloatingContact = () => {
@@ -13,7 +12,7 @@ const FloatingContact = () => {
 
   return (
     <a 
-      href="https://wa.me/5493517432323" 
+      href="https://wa.me/5493437556773"  // ← número actualizado
       target="_blank" 
       rel="noopener noreferrer" 
       className="floating-contact"
